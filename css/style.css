@@ -25,11 +25,11 @@ h6 { font-size: 20px;}
 
 a:link,
 a:visited {
-	color: #FFF;
+	color: rgb(43, 148, 27);
 	text-decoration: none;
 }
 a:hover {
-	color: rgb(43, 148, 27);
+	color: #FFF;
 }
 a:active {
 	color: rgb(122, 121, 121);
