@@ -1,0 +1,664 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	margin: 0;
+	padding: 0;
+  }
+
+body {
+	background: #C0C0C0;
+	font-family: 'Yanone+Kaffeesatz', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.3em 0 0.5em;
+	
+}
+h1 { font-size: 34px;}
+h2 { font-size: 30px;}
+h3 { font-size: 28px;}
+h4 { font-size: 25px;}
+h5 { font-size: 22px;}
+h6 { font-size: 20px;}
+
+a:link,
+a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(43, 148, 27);
+}
+a:active {
+	color: rgb(122, 121, 121);
+}
+.cf::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+::-moz-selection {
+	background: rgb(43, 148, 27);
+}
+::selection {
+	background: black;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+}
+.mapa{
+	text-align: center;
+}
+#wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+#header {
+	background-color: black;
+	border-bottom: 5px solid rgb(43, 148, 27);
+
+}
+
+#logo {
+	float: left;
+	margin-left: 60px;
+	padding-top: 25px;
+}
+.slogan {
+    color: white;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-family: "Courgette", serif;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 25px;
+
+}
+
+.mreze {
+	float: right;
+    letter-spacing: 2px;
+	margin-right: 30px;
+	padding-top: 35px;	
+}
+#respmenu {
+	display: none;
+}
+#nav {
+	background-color: black;
+	width: 100%;	
+}
+#nav ul li {
+	float: right;
+	list-style:none;
+}
+#nav ul li a {
+	font-size: 25px;
+	padding: 18px 20px 18px;
+	height: 20px;
+	display: block;
+	transition: 1s all ease;
+}
+
+#nav ul li a:link,
+#nav ul li a:visited {
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+#nav ul li a:hover {
+	background: rgb(43, 148, 27);
+}
+#nav ul li a:active {
+	background: rgb(122, 121, 121);
+}
+
+
+#hero {
+	position: relative;
+	margin-bottom: 20px;  
+	
+}
+
+#heroText {
+	background: rgba(0,0,0,0.75);
+	position: absolute;
+	bottom: 80px;
+	left: 40px;
+	padding: 20px;
+}
+#heroText h1 {
+	color: #FFF;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+#heroText h1 span {
+	font-weight: 300;
+}
+
+
+#promo {
+	margin-bottom: 20px;
+}
+.product {
+	float: left;
+	width: 380px;
+	margin-right: 10px;
+}
+.product:nth-of-type(3n) {
+	margin-right: 0;
+}
+.product:nth-of-type(1n) {
+	margin-left: 10px;
+}
+
+.product a {
+	position: relative;
+	display: block;
+}
+
+.product a:hover::after {
+	content: attr(title);
+	text-align: center;
+	color: #FFF;
+	font-size: 60px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.40);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.product a span {
+	margin: 5px 0 0 0;
+	color: #FFF;
+	text-align:center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:24px;
+	padding: 7px 0;
+	display: block;
+}
+.product a:link span,
+.product a:visited span {
+	background-color: black;
+	border-bottom: 4px solid rgb(43, 148, 27);
+}
+.product a:hover span {
+	background: rgb(43, 148, 27);
+	border-bottom: 4px solid black;
+}
+.product a:active span {
+	background: rgb(122, 121, 121);
+	border-bottom: 4px solid black;
+}
+
+#main {
+	float: left;
+	padding: 0 15px 0 15px;
+	width: 500px;
+	font-family: "Yanone+Kaffeesatz", Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+	float: right;
+	width: 600px;
+	padding: 0 15px 0 15px;
+}
+
+.not-front #main {
+	width: 700px;
+}
+.not-front #sidebar {
+	width: 200px;
+}
+.sideIco {
+	font-size: 50px;
+	color: black;
+}
+.icons{
+	font-size: 30px;
+	color: black;
+}
+.viber {
+	font-size: 30px;
+	color: #665CAC;
+}
+.whatsapp{
+	font-size: 30px;
+	color: #128C7E;
+}
+.facebook{
+	color: #4267B2;
+	font-size: 40px;
+}
+.instagram {
+	color:  #C13584;
+	font-size: 40px;
+}
+#header .facebook {
+	font-size: 65px;
+}
+#header .instagram{
+	font-size: 65px;
+}
+#partneri{
+	clear: both;
+	padding-top: 20px;
+}
+.partneri {
+	text-align: center;	
+	
+}
+
+.partneri-autocentar {
+	width: auto;
+	height: 520px;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+.partneri-autocentar::after {
+	content: '';
+	background-image: url(../images/partner.jpg);
+	opacity: 0.5;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.partneri-BG {
+	width: auto;
+	height: 520px;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+.partneri-BG::after {
+	content: '';
+	background-image: url(../images/BGtuning.png);
+	opacity: 0.5;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+#footer {
+	clear: both;
+	padding: 20px;
+	width: auto;
+	background-color: black;
+	height: 180px;
+}
+.footertext {
+	
+	color: #FFF;
+	float: none;
+	
+}
+.text1, .text2{
+	float: left;
+	margin-left: 10%;
+	
+}
+
+
+.slider {
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	
+}
+#sidebar {
+	width: 50%;
+
+}
+
+.slick-slide {
+  margin: center;
+ 
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 500px;
+margin: 0 auto;
+}
+
+.slick-slide {
+  transition: all ease-in-out .4s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .3;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.text-galerija {
+	text-align: center;
+	margin: 30px;
+}
+
+#limarija-i-farbanje {
+	width: auto;
+	height: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: -10px;
+	padding-top: 15px;
+	
+}
+#limarija-i-farbanje::after {
+	content: '';
+	background-image: url(../images/havarisan.jpg);
+	opacity: 0.6;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#poliranje-automobila-farova {
+	width: auto;
+	height: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-bottom: 40px;
+	padding-top: 15px;
+	
+}
+#poliranje-automobila-farova::after {
+	content: '';
+	background-image: url(../images/far.jpg);
+	opacity: 0.6;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#varenje-plastike {
+	width: auto;
+	height: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+	padding-top: 15px;
+	margin-bottom: -20px;
+	
+}
+#varenje-plastike::after {
+	content: '';
+	background-image: url(../images/varenje.jpg);
+	opacity: 0.6;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	#wrapper {
+		width: 740px;
+	}
+	#logo{
+		margin: 0 auto;
+	}
+	.slogan{
+		font-size: 50px;
+		padding: 20px 0 10px;
+	}
+
+	#nav ul li a {
+		
+		padding: 0 auto;
+	}
+	#heroText {
+		bottom: 20px;
+		left: 20px;
+	}
+	#nav ul li a {
+		font-size: 25px;
+		padding: 15px 15px 15px;
+	}
+	.product {
+		width: 230px;
+		margin-right: 15px;
+	}
+	.product:nth-of-type(3n) {
+		margin-right: 0;
+	}
+	.product:nth-of-type(1n) {
+		margin-left: 5px;
+	}
+	.product a:hover::after {
+		content: attr(title);
+		text-align: center;
+		color: #FFF;
+		font-size: 40px;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.40);
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	#main {
+		width: 300px;
+		margin: 0 auto;
+		height: auto;
+	}
+	#sidebar {
+		width: 300px;	
+	}
+
+	.footerText, .text1, .text2 {
+		float: none;
+		width: auto;
+		margin: 0 auto;
+	}
+	#footer {
+		text-align: center;
+		height: 100%;
+	}
+	.mapa{
+		width: 380px;
+		height: 350px;
+	}
+	#header .facebook {
+		font-size: 45px;
+	}
+	#header .instagram{
+		font-size: 45px;
+	}
+	.mreze{
+		margin-top: -10px;
+	}
+	.new-raw{
+		display: none;
+	}
+	.slider {
+		margin: 0 auto;
+		width: 90%;
+		overflow: hidden;	
+	}
+	.slick-slide {
+		margin: 0 auto;
+	  }
+	  
+	  .slick-slide img {
+		width: 100%;
+		height: 300px;
+	  }
+
+}
+
+@media screen and (max-width:767px) {
+	#wrapper {
+		width: 100%;
+	}
+	#header{
+		border-bottom: none;
+	}
+	#logo{
+		display: none;
+	}	
+	.mreze {
+		float: right;
+		font-size: 35px;
+		margin: -20px 10px;
+	}
+	#header .facebook {
+		font-size: 35px;
+	}
+	#header .instagram{
+		font-size: 35px;
+	}
+	.instagram .facebook{
+		font-size: 15px;
+		
+	}
+	.slogan {
+		font-size: 25px;
+		margin: 0 auto;
+		padding-top: 5px;
+	}
+
+	#respmenu {
+		display:block;
+		margin-left: 20px;
+		font-size: 25px;
+		padding-top: 40px;
+		overflow: hidden;
+	}
+	#nav {
+		float:none;
+	}
+	#nav ul {
+		display:none;
+	}
+	#nav ul li {
+		float:none;
+		border-bottom:1px solid rgb(43, 148, 27);
+	}
+
+	#nav ul li a:hover {
+		background: rgb(43, 148, 27);
+	}
+
+	#heroText {
+		position: relative;
+		bottom: 0;
+		left: 0;
+	}
+	.product {
+		width: auto;
+		float: none;
+		margin: 0 auto;
+	}
+	.product:nth-of-type(3n) {
+		margin-right: 0px;
+	}
+	.product:nth-of-type(1n) {
+		margin-left: 0px;
+	}
+	.product img {
+		width: 100%;
+	}
+	#main {
+		float: none;
+		margin: 0 auto;
+		width: auto;
+		
+	}
+	#sidebar{
+		height: 100%;
+		float: none;
+		margin-bottom: -30px;
+		width: auto;
+	}
+
+	.sideIco {
+		font-size: 40px;
+		color: black;
+	}
+	#footer {
+		text-align: center;
+		height: 100%;
+	}
+	.footerText, .text1, .text2 {
+		float: none;
+		width: auto;
+		margin: 0 auto;
+	}
+	
+	.slider {
+		display: block;
+	}
+
+	.mapa{
+		width: 300px;
+		height: 350px;
+	}
+	.slider {
+		margin: 0 auto;
+		width: 100%;
+		overflow: hidden;	
+	}
+	#sidebar .slider {
+		width: auto;
+	}
+	.slick-slide {
+		margin: 0 auto;
+	  }
+	  
+	  .slick-slide img {
+		width: 100%;
+		height: 200px;
+	  }
+
+	h1 { font-size: 30px;}
+	h2 { font-size: 28px;}
+	h3 { font-size: 26px;}
+	p  { font-size: 18px;}
+}
